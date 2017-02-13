@@ -1,0 +1,226 @@
+<style media="screen">
+.steps {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.step-number {
+  font-size: 50px !important;
+  padding: 3px 14px;
+}
+</style>
+<header>
+  <div class="header-content">
+    <div class="header-content-inner">
+      <h1 id="homeHeading">Deseja fotografar ou filmar?</h1>
+      <hr>
+      <p>Com apenas alguns cliques você encontra profissionais altamente qualificados, envie sua necessidade e nos entraremos para voĉe os profissionais mais proximos a você</p>
+      <hr>
+      <h2>Veja o passo a passo, é simples!</h2>
+      <br><br>
+      <div class="row">
+
+        <div class="col-sm-3">
+          <div class="steps">
+            <p class="step-number"><b>1º</b></p>
+          </div><br><br>
+          Envie sua necessidade
+        </div>
+
+        <div class="col-sm-3">
+          <div class="steps">
+            <p class="step-number"><b>2º</b></p>
+          </div><br><br>
+          Receba ofertas
+        </div>
+
+        <div class="col-sm-3">
+          <div class="steps">
+            <p class="step-number"><b>3º</b></p>
+          </div><br><br>
+          Contato com profissional escolhido
+        </div>
+
+        <div class="col-sm-3">
+          <div class="steps">
+            <p class="step-number"><b>4º</b></p>
+          </div><br><br>
+          Após serviço concluido, avalie!
+        </div>
+      </div>
+
+      <a href="#about" class="btn btn-primary btn-xl page-scroll" style="margin-bottom: -164px;">Começar</a>
+    </div>
+  </div>
+</header>
+
+<div class="bg-primary form-steps">
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2 class="section-heading text-center">Qual a sua necessidade? <small style="color: white"> quando, como e onde... </small></h2>
+          <hr class="light">
+          <div class="row">
+            <form action="demands" method="post">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="name">Inoforme seu nome</label>
+                  <input type="text" name="name" class="form-control" value="">
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="name">Informe seu email</label>
+                  <input type="text" name="name" class="form-control" value="">
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="name">Fotografia ou Filmagem?</label>
+                  <select class="form-control" name="">
+                    <option value="option">Selecione...</option>
+                    <option value="option">Fotografia</option>
+                    <option value="option">Filmagem</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="name">Tipo do evento</label>
+                  <select class="form-control" name="">
+                    <option value="option">Selecione...</option>
+                    <option value="option">Pessoal</option>
+                    <option value="option">Aniversário</option>
+                    <option value="option">Casamento</option>
+                    <option value="option">Produto</option>
+                    <option value="option">Animais</option>
+                    <option value="option">Bebes</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="name">Data do evento</label>
+                  <input type="text" name="name" class="form-control" id="teste">
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="name">Estado</label>
+                  <select class="form-control" name="">
+                    <option value="option">Selecione...</option>
+                    <option value="option">Pessoal</option>
+                    <option value="option">Aniversário</option>
+                    <option value="option">Casamento</option>
+                    <option value="option">Produto</option>
+                    <option value="option">Animais</option>
+                    <option value="option">Bebes</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="name">Cidade</label>
+                  <select class="form-control" name="">
+                    <option value="option">Selecione...</option>
+                    <option value="option">Pessoal</option>
+                    <option value="option">Aniversário</option>
+                    <option value="option">Casamento</option>
+                    <option value="option">Produto</option>
+                    <option value="option">Animais</option>
+                    <option value="option">Bebes</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="name">Descrição do local do evento</label>
+                  <textarea name="name" class="form-control" rows="4" cols="80"></textarea>
+                </div>
+              </div>
+
+              <div class="col-lg-12 text-center" style="margin-top: 20px">
+                <button class="next-step-about btn btn-default btn-xl">Próximo estapa</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="event-date">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+
+          <div id='teste'></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $('#teste').datepicker({
+      format: "dd/mm/yyyy",
+      todayBtn: "linked",
+      language: "pt-BR",
+      todayHighlight: true
+    });
+    </script>
+  </section>
+</div>
+
+<section id="services" class="hide">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">E agora?</h2>
+        <hr class="primary">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box">
+          <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+          <h3>Parabens, sua demanda foi enviada</h3>
+          <p class="text-muted">Os profissionais estão preparando uma proposta para você.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box">
+          <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+          <h3>Você será notificado por email</h3>
+          <p class="text-muted">Fique atento a sua caixa de entrada. se cair no spam nos avise</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box">
+          <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+          <h3>Matenha seu perfil atualizado</h3>
+          <p class="text-muted">Quanto mais informação melhor. socialize!</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box">
+          <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+          <h3>Acesse sua area administrativa</h3>
+          <p class="text-muted">Você poderá ter controle das suas propostas, aceitar ou recusar</p>
+          <button type="button" class="btn btn-primary" name="button">Minha conta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
